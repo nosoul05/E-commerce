@@ -45,12 +45,22 @@ class Directory extends React.Component{
 
     render(){
         return(
+            // <div className='directory-menu'>
+            //     {
+            //        this.state.sections.map(({title, imageUrl, id, size}) => <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} /> )
+            //     }
+            // </div>
+
+            //Above is the long form way of writing. The trick below is recommended to pull in the Id than pull in the rest of the properties with it
             <div className='directory-menu'>
-                {
-                   this.state.sections.map(({title, imageUrl, id, size}) => <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} /> )
-                }
-            </div>
-        )
+              {this.state.sections.map(({id, ...otherSectionProps }) => (
+                <MenuItem key={id} {...otherSectionProps} />
+              ))}
+
+              </div>
+
+
+        );
 
     }
 }
