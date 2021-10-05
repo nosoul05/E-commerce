@@ -7,6 +7,7 @@ import HomePage from './pages/homepage/homepage.component';
 // import HomePage from '../../src/homepage.component';
 import ShopPage from './pages/shop/shop.compontent';
 import Header from './components/header/header.compontent';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.compontent';
 
 
 // const HatsPage = () => (
@@ -42,6 +43,7 @@ function App() {
     <Switch>
       <Route exact path='/E-commerce' component={HomePage} />
       <Route path='/E-commerce/shop' component={ShopPage} />
+      <Route path='/E-commerce/signin' component={SignInAndSignUpPage} />
       {/* <Route path='/E-commerce/hats' component={HatsPage} />
       <Route exact path='/E-commerce/topics' component={TopicsList}></Route>
       <Route path='/E-commerce/topics/:topicId' component={TopicDetail} /> */}
