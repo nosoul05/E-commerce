@@ -1,6 +1,6 @@
 import React from 'react';
 import SignIn from '../../components/sign-in/sign-in.compontent';
-
+import SignUp from '../../components/sign-up/sign-up.compontent';
 
 import './sign-in-and-sign-up.styles.scss';
 
@@ -9,6 +9,7 @@ import './sign-in-and-sign-up.styles.scss';
 
     <div className='sign-in-and-sign-up'>
         <SignIn/>
+        <SignUp/>
        
     </div>
 
